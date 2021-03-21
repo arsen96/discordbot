@@ -1,5 +1,10 @@
 const Discord = require("discord.js");
-
+var http = require('http');
+const res = http.createServer(function (req, res) {
+})
+res.listen(process.env.PORT || 80, () => {
+  console.log("Listening on port 80");
+});
 require('dotenv').config();
 // import res from "./test"
 
