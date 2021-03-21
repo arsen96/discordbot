@@ -2,15 +2,16 @@ const Discord = require("discord.js");
 var http = require('http');
 const res = http.createServer(function (req, res) {
 })
-res.listen(process.env.PORT || 80, () => {
-  console.log("Listening on port 80");
-});
+
 require('dotenv').config();
 // import res from "./test"
 
 
 const bot = new Discord.Client();
 
+
+res.listen(process.env.PORT || 80, () => {
+  console.log("Listening on port 80 test");
   bot.on('message', function (message) {
     const anekdotner = new Array(`Ապարացին ընկնում է փոսը և չի կարողանում դուրս գալ հետո ասում է.
     -Էս վերջին անգամն եմ փորձում ստացվեց ստացվեց, չստացվեց կգնամ տուն:`,
@@ -23,7 +24,7 @@ const bot = new Discord.Client();
     `Ապարանցին գնում է վարսավիրանոց, հարցնում է թէ մազ կտրելն ի՞նչ արժի: Վարսավիրը պատասխանում է, - 1000 դրամ: Ապարանցին ասում է, - դէ ինձ 400 –ի կտրի`,
     `Ծանոթիս պլաստիկ օպերացիայի համար հինգ հազար դոլար պարտք տվեցի եւ հիմա չեմ կարողանում նրան գտնել... Չգիտեմ՝ ի՞նչ տեսք ունի, - շվարած ասում է մի ապարանցի`,
     `Ինչո՞ւ ես ուզում կնոջիցդ բաժանվել, - հարցնում են ապարանցուն։ - Շատ կեղտոտ կնիկ է`);
-
+    console.log("Listening on port 80");
       if(message.content === "anekdot" || message.content === "անեկդոտ"){
         var item = anekdotner[Math.floor(Math.random() * anekdotner.length)];
         console.log("item",item);
@@ -32,5 +33,8 @@ const bot = new Discord.Client();
         message.channel.send("Es qo imacacneric chem")
       }
   })
+});
+
+
 
 bot.login(process.env.TOKEN);
