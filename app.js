@@ -1,5 +1,8 @@
 const Discord = require("discord.js");
 
+const { token} = require('./config.json');
+// import res from "./test"
+
 
 const bot = new Discord.Client();
 
@@ -25,4 +28,4 @@ const bot = new Discord.Client();
       }
   })
 
-bot.login("ODIyNTYxOTE5OTU2NDE4NjAw.YFUEfA.JaNC43vAwbN3WxwnFdBmRLo2hVo");
+bot.login(token);
