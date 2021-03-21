@@ -4,8 +4,8 @@ const Discord = require("discord.js");
 const bot = new Discord.Client();
 
   bot.on('message', function (message) {
-    const anekdotner = new Array(`Ապարացին ընկնում է փոսը և չի կարողանում դուրս գալ հետո ասում է.`,
-    `-Էս վերջին անգամն եմ փորձում ստացվեց ստացվեց, չստացվեց կգնամ տուն:`,
+    const anekdotner = new Array(`Ապարացին ընկնում է փոսը և չի կարողանում դուրս գալ հետո ասում է.
+    -Էս վերջին անգամն եմ փորձում ստացվեց ստացվեց, չստացվեց կգնամ տուն:`,
     `Ապրիլի 1-ին ապարանցուն «քֆուր» են տալիս, չի հավատում`,
     `Մայիսի 9–ը որոշ երկրներ տոնում են «կարևորը մասնակցությունն է, ոչ թե հաղթանակը» կարգախոսով։`,
     `Աբարանցիք իմանում են Ղարաբաղ կռիվա զանգում եմ ոստիկանություն`,
@@ -25,4 +25,4 @@ const bot = new Discord.Client();
       }
   })
 
-bot.login("ODIyNTYxOTE5OTU2NDE4NjAw.YFUEfA.4DkTJdghFuQzdy9UkfB0nvY_uE4");
+bot.login("ODIyNTYxOTE5OTU2NDE4NjAw.YFUEfA.7naHFZZ_mjmMmjC1nSp2d9kKZWU");
