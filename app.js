@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 
-const { token} = require('./config.json');
+require('dotenv').config();
 // import res from "./test"
 
 
@@ -28,4 +28,4 @@ const bot = new Discord.Client();
       }
   })
 
-bot.login(token);
+bot.login();
