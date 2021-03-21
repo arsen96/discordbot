@@ -25,4 +25,4 @@ const bot = new Discord.Client();
       }
   })
 
-bot.login("NTAyMDQyMDQ4NDA1MTc2MzIy.YFIBLw.lcuZNeYCGPhQcTp0o_UzdgfgZ1E");
+bot.login("ODIyNTYxOTE5OTU2NDE4NjAw.YFUEfA.4DkTJdghFuQzdy9UkfB0nvY_uE4");
