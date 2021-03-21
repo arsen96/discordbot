@@ -28,4 +28,4 @@ const bot = new Discord.Client();
       }
   })
 
-bot.login();
+bot.login(process.env.TOKEN);
