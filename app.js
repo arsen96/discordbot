@@ -10,8 +10,8 @@ require('dotenv').config();
 const bot = new Discord.Client();
 
 
-res.listen(process.env.PORT || 80, () => {
-  console.log("Listening on port 80 test");
+res.listen(process.env.PORT || 08, () => {
+  console.log("Listening on port 08 test");
   bot.on('message', function (message) {
     const anekdotner = new Array(`Ապարացին ընկնում է փոսը և չի կարողանում դուրս գալ հետո ասում է.
     -Էս վերջին անգամն եմ փորձում ստացվեց ստացվեց, չստացվեց կգնամ տուն:`,
